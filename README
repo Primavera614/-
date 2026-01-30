@@ -1,0 +1,20 @@
+# Analysis of Health Poverty Alleviation Policies for Rural Elderly Women (2016-2025)
+> 基于 LDA 主题模型与政策文本挖掘的实证研究 Demo
+
+## 1. Project Overview (项目简介)
+本项目旨在通过自然语言处理 (NLP) 技术，分析中国农村老年女性健康贫困治理政策的演变逻辑。
+通过对 450 份政策文本进行 LDA 主题建模，识别出“权益保障”、“长护险制度”等 5 个核心议题，并揭示了从“脱贫攻坚”到“乡村振兴”时期的政策重心转移。
+
+## 2. Key Features (核心工作)
+Data Mining: 构建了包含 450 份中央及地方政策的专用语料库。
+Methodology:使用 Jieba 进行分词与去噪，基于 Coherence Score 优化的 LDA 模型 (K=5)。
+Visualization:绘制了主题强度热度图与 Sankey 政策演化流向图。
+
+## 3. Repository Structure (文件结构)
+* notebooks/': 包含完整的数据清洗、建模与可视化代码。
+* `results/`: 存放生成的主题词表 (Excel) 与分析图表 (PNG)。
+
+## 4. How to Run (如何运行)
+1. Install dependencies: pip install -r requirements.txt
+2. Open notebooks/Policy_Analysis_Full_Process.ipynb
+3. Run all cells.
