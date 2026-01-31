@@ -1,0 +1,13 @@
+▪ pandas【数据处理与分析的核心库】用于读取原始数据 (read_excel/csv)、清洗数据、管理分词结果，以及后导出分析表格(to_excel)。所有数据流转都是以 DataFrame 形式进行的。
+
+▪ jieba【中文分词组件】将连续的政策文本切分为独立的词语（Tokens），使用的自定义词典（如“长护险”和停用词过滤功能都是由它实现的。
+
+▪ gensim【主题建模与自然语言处理库】项目的核心算法库。用于构建语料库 (Corpus)、生成词典(Dictionary)、计算一致性得分 (Coherence Score) 以及训练 LDA 模型。
+
+▪ pyLDAvis【LDA 模型交互式可视化库】生成那个可以互动的气泡图（HTML文件），帮助直观展示主题间的距离以及每个主题下的关键词分布
+
+▪ matplotlib【静态绘图库】用于绘制在 Notebook 中生成的静态图表，例如一致性得分的变化折线图、主题强度的柱状图等。
+
+▪ openpyxl【Excel 文件读写引擎】这是一个“隐形必需工具”。虽然代码里没有直接 import openpyxl，但pandas 在读取和保存.xlsx 格式文件时，底层必须调用它。如果没有它，read_excel 会报错。
+
+▪ os, re, collections：这些是 Python 的 标准库 (Standard Library)，安装 Python 时自带，不需要额外安装。
