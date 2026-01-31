@@ -1,20 +1,29 @@
 # Analysis of Health Poverty Alleviation Policies for Rural Elderly Women (2016-2025)
-> 基于 LDA 主题模型与政策文本挖掘的实证研究 Demo
+基于 LDA 主题模型的农村老年女性健康扶贫政策文本分析 (2016-2025)
+本仓库归档了关于“中国农村老年女性健康扶贫政策演变逻辑”研究项目的完整数据分析流程与代码。
+项目旨在通过自然语言处理 (NLP) 技术，对 2016 年至 2025 年间的 450 份中央及地方政策文本进行定量分析。
 
-## 1. Project Overview (项目简介)
-本项目旨在通过自然语言处理 (NLP) 技术，分析中国农村老年女性健康贫困治理政策的演变逻辑。
-通过对 450 份政策文本进行 LDA 主题建模，识别出“权益保障”、“长护险制度”等 5 个核心议题，并揭示了从“脱贫攻坚”到“乡村振兴”时期的政策重心转移。
+ 分析流程 (Pipeline)
+本项目分析链路主要包含以下三个阶段：
+1. 语料库构建与预处理
+（1）数据清洗：针对政策文本特征，构建了包含行政公文常用词的停用词表 (Stopwords)，剔除无实质语义的噪音。
+（2）分词处理：使用 `jieba` 进行中文分词，并引入自定义领域词典（如“两癌筛查”、“长护险”等）以确保专业术语的切分准确性。
 
-## 2. Key Features (核心工作)
-Data Mining: 构建了包含 450 份中央及地方政策的专用语料库。
-Methodology:使用 Jieba 进行分词与去噪，基于 Coherence Score 优化的 LDA 模型 (K=5)。
-Visualization:绘制了主题强度热度图与 Sankey 政策演化流向图。
+2. LDA 主题建模
+（1）模型训练：基于 `Gensim` 库构建 Latent Dirichlet Allocation (LDA) 模型。
+（2）参数寻优：通过计算一致性得分 (Coherence Score) 确定最优主题数 (K=5)，平衡了模型的可解释性与困惑度。
+（3）主题识别：识别出“权益保障”、“长期护理保险制度”、“数字健康治理”等 5 个核心政策议题。
 
-## 3. Repository Structure (文件结构)
-* notebooks/': 包含完整的数据清洗、建模与可视化代码。
-* `results/`: 存放生成的主题词表 (Excel) 与分析图表 (PNG)。
+3. 定量证据可视化
+强度分析：量化不同主题在文档集合中的概率分布。
+演化分析：构建 Sankey (桑基图) 数据流，可视化政策重心在不同时期的流转路径。
 
-## 4. How to Run (如何运行)
-1. Install dependencies: pip install -r requirements.txt
-2. Open notebooks/Policy_Analysis_Full_Process.ipynb
-3. Run all cells.
+*仓库结构说明
+* `notebooks/`: 包含全流程分析代码 (Jupyter Notebook)。
+    * `Policy_Analysis_Full_Process.ipynb`: 主分析脚本，涵盖从数据清洗到可视化的完整逻辑。
+* `results/`: 存放模型输出的结构化数据与图表。
+    * `Table_1_Keywords.xlsx`: 主题词分布明细表。
+    * `Chart_*.png`: 用于论文展示的高分辨率分析图表。
+* `data/`: (可选) 存放脱敏后的原始文本数据或字典文件。
+* `requirements.txt`: 项目运行所需的 Python 依赖库列表。
+
