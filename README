@@ -20,7 +20,7 @@
 
 ## 仓库文件结构
 
-<pre>
+```text
 ├── notebooks/
 │   └── Policy_Analysis_Full_Process.ipynb
 ├── data/
@@ -30,4 +30,3 @@
 │   ├── Keywords.xlsx
 │   └── Chart_*.png
 └── requirements.txt
-</pre>
