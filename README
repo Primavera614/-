@@ -1,16 +1,13 @@
 # Analysis of Health Poverty Alleviation Policies for Rural Elderly Women (2016-2025)
 
-本仓库归档了关于“中国农村老年女性健康贫困政策演变逻辑”研究项目的完整数据分析流程与代码。
-项目旨在通过自然语言处理 (NLP) 技术，对 2016 年至 2025 年间的 450 份中央及地方政策文本进行定量分析。
+> 本仓库归档了关于“中国农村老年女性健康贫困政策演变逻辑”研究项目的完整数据分析流程与代码。项目旨在通过自然语言处理 (NLP) 技术，对 2016 年至 2025 年间的 450 份中央及地方政策文本进行定量分析。
 
 ## 可视化演示
 
 在阅读代码前，您可以点击下方链接查看动态主题模型：
-[👉 点击这里查看交互式 LDA 气泡图](https://primavera614.github.io/-/results/LDA_Result.html)
+👉 **[点击这里查看交互式 LDA 气泡图](https://primavera614.github.io/-/results/LDA_Result.html)**
 
 ## 分析流程
-
-本项目分析链路主要包含以下三个阶段：
 
 ### 1. 语料库构建与预处理
 针对政策文本特征，我们构建了包含行政公文常用词的停用词表，剔除了无实质语义的噪音。同时使用 `jieba` 进行中文分词，并引入自定义领域词典（如“两癌筛查”、“长护险”等）以确保专业术语的切分准确性。
@@ -23,17 +20,13 @@
 
 ## 仓库文件结构
 
-* `notebooks/`
-包含全流程分析代码 (Jupyter Notebook)。
-
-* `data/`
-存放脱敏后的原始文本数据或字典文件。
-
-* `results/`
-存放模型输出的结构化数据与图表。其中 `LDA_Result.html` 为交互式可视化源文件，`Chart_*.png` 为论文中使用的高分辨率插图。
-
-* `requirements.txt`
-项目运行所需的 Python 依赖库列表。
-
----
-Created for RA Application Demo | 2026
+```text
+├── notebooks/
+│   └── Policy_Analysis_Full_Process.ipynb  # 全流程分析代码
+├── data/
+│   └── (存放脱敏后的原始文本数据或字典文件)
+├── results/
+│   ├── LDA_Result.html     # 交互式可视化源文件(Live Demo)
+│   ├── Keywords.xlsx       # 主题词分布明细表
+│   └── Chart_*.png         # 论文高分辨率插图
+└── requirements.txt        # 项目依赖库列表
