@@ -3,7 +3,7 @@ Analysis of Health Poverty Alleviation Policies for Rural Elderly Women (2016-20
 本仓库归档了关于“中国农村老年女性健康扶贫政策演变逻辑”研究项目的完整数据分析流程与代码。
 项目旨在通过自然语言处理 (NLP) 技术，对 2016 年至 2025 年间的 450 份中央及地方政策文本进行定量分析。
 
- 分析流程 (Pipeline)
+*分析流程 (Pipeline)
 本项目分析链路主要包含以下三个阶段：
 1. 语料库构建与预处理
 （1）数据清洗：针对政策文本特征，构建了包含行政公文常用词的停用词表 (Stopwords)，剔除无实质语义的噪音。
@@ -19,11 +19,10 @@ Analysis of Health Poverty Alleviation Policies for Rural Elderly Women (2016-20
 演化分析：构建 Sankey (桑基图) 数据流，可视化政策重心在不同时期的流转路径。
 
 *仓库结构说明
-* `notebooks/`: 包含全流程分析代码 (Jupyter Notebook)。
-    * `Policy_Analysis_Full_Process.ipynb`: 主分析脚本，涵盖从数据清洗到可视化的完整逻辑。
-* `results/`: 存放模型输出的结构化数据与图表。
-    * `Table_1_Keywords.xlsx`: 主题词分布明细表。
-    * `Chart_*.png`: 用于论文展示的高分辨率分析图表。
-* `data/`: (可选) 存放脱敏后的原始文本数据或字典文件。
-* `requirements.txt`: 项目运行所需的 Python 依赖库列表。
-
+（1） `data/`:  存放脱敏后的原始文本数据或字典文件。
+（2） `notebooks/`: 包含全流程分析代码 (Jupyter Notebook)。
+（3） `results/`: 存放模型输出的结构化数据与图表。
+     `Table_1_Keywords.xlsx`: 主题词分布明细表。
+     `Chart_*.png`: 用于论文展示的高分辨率分析图表。
+      https://primavera614.github.io/-/results/LDA_Result.html气泡图
+（4） `requirements.txt`: 项目运行所需的 Python 依赖库列表。
