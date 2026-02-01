@@ -20,13 +20,15 @@
 
 ## 仓库文件结构
 
-```text
-├── notebooks/
-│   └── Policy_Analysis_Full_Process.ipynb
-├── data/
-│   └── (原始数据/字典文件)
-├── results/
-│   ├── LDA_Result.html
-│   ├── Keywords.xlsx
-│   └── Chart_*.png
-└── requirements.txt
+    ├── notebooks/
+    │   └── Policy_Analysis_Full_Process.ipynb
+    ├── data/
+    │   └── (原始数据/字典文件)
+    ├── results/
+    │   ├── LDA_Result.html
+    │   ├── Keywords.xlsx
+    │   └── Chart_*.png
+    └── requirements.txt
+
+---
+*Created for RA Application Demo | 2026*
