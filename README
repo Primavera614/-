@@ -22,11 +22,11 @@
 
 ```text
 ├── notebooks/
-│   └── Policy_Analysis_Full_Process.ipynb  # 全流程分析代码
+│   └── Policy_Analysis_Full_Process.ipynb
 ├── data/
-│   └── (存放脱敏后的原始文本数据或字典文件)
+│   └── (原始数据/字典文件)
 ├── results/
-│   ├── LDA_Result.html     # 交互式可视化源文件(Live Demo)
-│   ├── Keywords.xlsx       # 主题词分布明细表
-│   └── Chart_*.png         # 论文高分辨率插图
-└── requirements.txt        # 项目依赖库列表
+│   ├── LDA_Result.html
+│   ├── Keywords.xlsx
+│   └── Chart_*.png
+└── requirements.txt
