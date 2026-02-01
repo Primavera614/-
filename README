@@ -24,5 +24,5 @@ Analysis of Health Poverty Alleviation Policies for Rural Elderly Women (2016-20
 （3） `results/`: 存放模型输出的结构化数据与图表。
      `Table_1_Keywords.xlsx`: 主题词分布明细表。
      `Chart_*.png`: 用于论文展示的高分辨率分析图表。
-      https://primavera614.github.io/-/results/LDA_Result.html气泡图
+[👉 点击这里查看交互式 LDA 气泡图 (Live Demo)](https://primavera614.github.io/-/Results/LDA_Result.html)
 （4） `requirements.txt`: 项目运行所需的 Python 依赖库列表。
